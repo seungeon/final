@@ -142,7 +142,7 @@ function draw()
     } 
 
 
-    var duration3 = 2000;
+    var duration3 = 15000;
     var timing3 = (new Date()%duration3)/duration3;
 
 
