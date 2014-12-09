@@ -78,6 +78,65 @@ function draw()
     	image(boxClick2,1683.31,748.11);
     }
 
+
+
+
+    var duration = 7000;
+    var timing = (new Date()%duration)/duration;
+
+
+    if(timing*7 <1){
+    image(fish1,552.47,146.56);
+    } else if(timing*7 <2){
+    image(fish2,552.47,146.56);
+    } else if(timing*7 <3){
+    image(fish3,552.47,146.56);
+    }else if(timing*7 <4){
+    image(fish4,552.47,146.56);
+    }else if(timing*7 <5){
+    image(fish5,552.47,146.56);
+    }else if(timing*7 <6){
+    image(fish6,552.47,146.56);
+    }else{
+    image(fish7,552.47,146.56);
+    }
+
+
+
+    //
+
+
+
+
+    var duration2 = 800;
+    var timing2 = (new Date()%duration2)/duration2;
+
+
+
+    if(timing2*2 <1){
+    image(pul1,178.63,572.44);
+    } else{
+    image(pul2,178.63,572.44);
+    } 
+
+
+    if(timing2*2 <1){
+    image(ful1,258.92,576.16);
+    } else{
+    image(ful2,258.92,576.16);
+    } 
+
+
+
+    if(timing2*2 <1){
+    image(leapR1,1665.44,276.52);
+    } else{
+    image(leapR2,1665.44,276.52);
+    } 
+
+
+
+
     var duration3 = 15000;
     var timing3 = (new Date()%duration3)/duration3;
 
@@ -117,61 +176,12 @@ function draw()
     }
 
 
-    var duration = 7000;
-    var timing = (new Date()%duration)/duration;
-
-
-    if(timing*7 <1){
-    image(fish1,552.47,146.56);
-    } else if(timing*7 <2){
-    image(fish2,552.47,146.56);
-    } else if(timing*7 <3){
-    image(fish3,552.47,146.56);
-    }else if(timing*7 <4){
-    image(fish4,552.47,146.56);
-    }else if(timing*7 <5){
-    image(fish5,552.47,146.56);
-    }else if(timing*7 <6){
-    image(fish6,552.47,146.56);
-    }else{
-    image(fish7,552.47,146.56);
-    }
-
-
-
-    //
-
-
-
-
-    var duration2 = 800;
-    var timing2 = (new Date()%duration2)/duration2;
-
-    if(timing2*2 <1){
-    image(pul1,178.63,572.44);
-    } else{
-    image(pul2,178.63,572.44);
-    } 
-
-
-    if(timing2*2 <1){
-    image(ful1,258.92,576.16);
-    } else{
-    image(ful2,258.92,576.16);
-    } 
 
     if(timing2*2 <1){
     image(leapL1,0,556.44);
     } else{
     image(leapL2,0,556.44);
     } 
-
-    if(timing2*2 <1){
-    image(leapR1,1665.44,276.52);
-    } else{
-    image(leapR2,1665.44,276.52);
-    } 
-
 
 
 
