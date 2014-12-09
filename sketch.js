@@ -3,8 +3,8 @@ var sound, bgm;
 
 
 function preload(){
-  sound = loadSound("./bgm.mp3");
-	bgm = loadSound("./click.mp3");
+  sound = loadSound("./click.mp3");
+	bgm = loadSound("./bgm.mp3");
 }
 
 function setup()
