@@ -91,19 +91,19 @@ function draw()
 
 
     if(timing*7 <1){
-    image(fish1,397.68,105.5);
+    image(fish1,552.47,146.56);
     } else if(timing*7 <2){
-    image(fish2,397.68,105.5);
+    image(fish2,552.47,146.56);
     } else if(timing*7 <3){
-    image(fish3,397.68,105.5);
+    image(fish3,552.47,146.56);
     }else if(timing*7 <4){
-    image(fish4,397.68,105.5);
+    image(fish4,552.47,146.56);
     }else if(timing*7 <5){
-    image(fish5,397.68,105.5);
+    image(fish5,552.47,146.56);
     }else if(timing*7 <6){
-    image(fish6,397.68,105.5);
+    image(fish6,552.47,146.56);
     }else{
-    image(fish7,397.68,105.5);
+    image(fish7,552.47,146.56);
     }
 
 
