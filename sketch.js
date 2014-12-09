@@ -66,7 +66,7 @@ function draw()
 
     fill(237,112,50);
     noStroke();
-	if(mouseX > 100 && mouseX <100+boxOver.width && mouseY > 100 && mouseY <100+boxOver.height){
+	if(mouseX > 1638 && mouseX <1904+boxOver.width && mouseY > 690 && mouseY <880+boxOver.height){
 		image(boxOver,1638.43,687.97);
 	}
 
