@@ -78,16 +78,47 @@ function draw()
     	image(boxClick2,1683.31,748.11);
     }
 
+    var duration3 = 15000;
+    var timing3 = (new Date()%duration3)/duration3;
+
+
+    if(timing3*16 <1){
+    image(crap1, timing3*1920,803.9);
+    } else if(timing*16 <2){
+    image(crap2, timing3*1920,803.9);
+    } else if(timing3*16 <3){
+    image(crap3, timing3*1920,803.9);
+    } else if(timing3*16 <4){
+    image(crap4, timing3*1920,803.9);
+    } else if(timing3*16 <5){
+    image(crap5, timing3*1920,803.9);
+    } else if(timing3*16 <6){
+    image(crap6, timing3*1920,803.9);
+    } else if(timing3*16 <7){
+    image(crap7, timing3*1920,803.9);
+    } else if(timing3*16 <8){
+    image(crap8, timing3*1920,803.9);
+    } else if(timing3*16 <9){
+    image(crap9, timing3*1920,803.9);
+    } else if(timing3*16 <10){
+    image(crap10, timing3*1920,803.9);
+    } else if(timing3*16 <11){
+    image(crap11, timing3*1920,803.9);
+    } else if(timing3*16 <12){
+    image(crap12, timing3*1920,803.9);
+    } else if(timing3*16 <13){
+    image(crap13, timing3*1920,803.9);
+    } else if(timing3*16 <14){
+    image(crap14, timing3*1920,803.9);
+    } else if(timing3*16 <15){
+    image(crap15, timing3*1920,803.9);
+    } else{
+    image(crap16, timing3*1920,803.9);
+    }
+
 
     var duration = 7000;
     var timing = (new Date()%duration)/duration;
-
-
-
-
-    //crap
-
-
 
 
     if(timing*7 <1){
@@ -142,44 +173,6 @@ function draw()
     } 
 
 
-    var duration3 = 15000;
-    var timing3 = (new Date()%duration3)/duration3;
-
-
-
-    if(timing3*16 <1){
-    image(crap1, timing3*1920,803.9);
-    } else if(timing*16 <2){
-    image(crap2, timing3*1920,803.9);
-    } else if(timing3*16 <3){
-    image(crap3, timing3*1920,803.9);
-    } else if(timing3*16 <4){
-    image(crap4, timing3*1920,803.9);
-    } else if(timing3*16 <5){
-    image(crap5, timing3*1920,803.9);
-    } else if(timing3*16 <6){
-    image(crap6, timing3*1920,803.9);
-    } else if(timing3*16 <7){
-    image(crap7, timing3*1920,803.9);
-    } else if(timing3*16 <8){
-    image(crap8, timing3*1920,803.9);
-    } else if(timing3*16 <9){
-    image(crap9, timing3*1920,803.9);
-    } else if(timing3*16 <10){
-    image(crap10, timing3*1920,803.9);
-    } else if(timing3*16 <11){
-    image(crap11, timing3*1920,803.9);
-    } else if(timing3*16 <12){
-    image(crap12, timing3*1920,803.9);
-    } else if(timing3*16 <13){
-    image(crap13, timing3*1920,803.9);
-    } else if(timing3*16 <14){
-    image(crap14, timing3*1920,803.9);
-    } else if(timing3*16 <15){
-    image(crap15, timing3*1920,803.9);
-    } else{
-    image(crap16, timing3*1920,803.9);
-    }
 
 
     image(tree,599.47,713.38);
