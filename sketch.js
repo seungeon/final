@@ -115,7 +115,7 @@ function draw()
     } else if(timing*16 <8){
     image(crap8, timing*1920,578.66);
     } else if(timing*16 <9){
-    image(crap9, timing*1920,578.66;
+    image(crap9, timing*1920,578.66);
     } else if(timing*16 <10){
     image(crap10, timing*1920,578.66);
     } else if(timing*16 <11){
