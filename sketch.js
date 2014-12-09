@@ -83,17 +83,6 @@ function draw()
     var timing = (new Date()%duration)/duration;
 
 
-    if(timing*2 <1){
-    image(leapL1,0,400.53);
-    } else{
-    image(leapL2,0,400.53);
-    } 
-
-    if(timing*2 <1){
-    image(leapR1,1198.8,199.04);
-    } else{
-    image(leapR2,1198.8,199.04);
-    } 
 
 
     //crap
@@ -133,6 +122,25 @@ function draw()
     }
 
 
+
+    if(timing*7 <1){
+    image(fish1,397.68,105.5);
+    } else if(timing*7 <2){
+    image(fish2,397.68,105.5);
+    } else if(timing*7 <3){
+    image(fish3,397.68,105.5);
+    }else if(timing*7 <4){
+    image(fish4,397.68,105.5);
+    }else if(timing*7 <5){
+    image(fish5,397.68,105.5);
+    }else if(timing*7 <6){
+    image(fish6,397.68,105.5);
+    }else{
+    image(fish7,397.68,105.5);
+    }
+
+
+
     //
 
 
@@ -154,25 +162,17 @@ function draw()
     image(ful2,186.37,414.73);
     } 
 
+    if(timing2*2 <1){
+    image(leapL1,0,400.53);
+    } else{
+    image(leapL2,0,400.53);
+    } 
 
-    if(timing2*7 <1){
-    image(fish1,397.68,105.5);
-    } else if(timing2*7 <2){
-    image(fish2,397.68,105.5);
-    } else if(timing2*7 <3){
-    image(fish3,397.68,105.5);
-    }else if(timing2*7 <4){
-    image(fish4,397.68,105.5);
-    }else if(timing2*7 <5){
-    image(fish5,397.68,105.5);
-    }else if(timing2*7 <6){
-    image(fish6,397.68,105.5);
-    }else{
-    image(fish7,397.68,105.5);
-    }
-
-
-
+    if(timing2*2 <1){
+    image(leapR1,1198.8,199.04);
+    } else{
+    image(leapR2,1198.8,199.04);
+    } 
 
 
 
