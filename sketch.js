@@ -67,15 +67,15 @@ function draw()
     fill(237,112,50);
     noStroke();
 	if(mouseX > 100 && mouseX <100+boxOver.width && mouseY > 100 && mouseY <100+boxOver.height){
-		image(boxOver,1179.36,495.21);
+		image(boxOver,1638.43,687.97);
 	}
 
 
 
     if(loadingImage === 1){
-    	image(boxClick1,1211.67,538.5);
+    	image(boxClick1,1683.31,748.11);
     }else if(loadingImage === 2){
-    	image(boxClick2,1211.67,538.5);
+    	image(boxClick2,1683.31,748.11);
     }
 
 
@@ -87,39 +87,6 @@ function draw()
 
     //crap
 
-    if(timing*16 <1){
-    image(crap1, timing*1920,578.66);
-    } else if(timing*16 <2){
-    image(crap2, timing*1920,578.66);
-    } else if(timing*16 <3){
-    image(crap3, timing*1920,578.66);
-    } else if(timing*16 <4){
-    image(crap4, timing*1920,578.66);
-    } else if(timing*16 <5){
-    image(crap5, timing*1920,578.66);
-    } else if(timing*16 <6){
-    image(crap6, timing*1920,578.66);
-    } else if(timing*16 <7){
-    image(crap7, timing*1920,578.66);
-    } else if(timing*16 <8){
-    image(crap8, timing*1920,578.66);
-    } else if(timing*16 <9){
-    image(crap9, timing*1920,578.66);
-    } else if(timing*16 <10){
-    image(crap10, timing*1920,578.66);
-    } else if(timing*16 <11){
-    image(crap11, timing*1920,578.66);
-    } else if(timing*16 <12){
-    image(crap12, timing*1920,578.66);
-    } else if(timing*16 <13){
-    image(crap13, timing*1920,578.66);
-    } else if(timing*16 <14){
-    image(crap14, timing*1920,578.66);
-    } else if(timing*16 <15){
-    image(crap15, timing*1920,578.66);
-    } else{
-    image(crap16, timing*1920,578.66);
-    }
 
 
 
@@ -150,41 +117,79 @@ function draw()
     var timing2 = (new Date()%duration2)/duration2;
 
     if(timing2*2 <1){
-    image(pul1,128.58,412.05);
+    image(pul1,178.63,572.44);
     } else{
-    image(pul2,128.58,412.05);
+    image(pul2,178.63,572.44);
     } 
 
 
     if(timing2*2 <1){
-    image(ful1,186.37,414.73);
+    image(ful1,258.92,576.16);
     } else{
-    image(ful2,186.37,414.73);
+    image(ful2,258.92,576.16);
     } 
 
     if(timing2*2 <1){
-    image(leapL1,0,400.53);
+    image(leapL1,0,556.44);
     } else{
-    image(leapL2,0,400.53);
+    image(leapL2,0,556.44);
     } 
 
     if(timing2*2 <1){
-    image(leapR1,1198.8,199.04);
+    image(leapR1,1665.44,276.52);
     } else{
-    image(leapR2,1198.8,199.04);
+    image(leapR2,1665.44,276.52);
     } 
 
 
+    var duration3 = 2000;
+    var timing3 = (new Date()%duration3)/duration3;
 
 
-    image(tree,431.5,513.5);
-    image(bottom,1090.8,638.64);
+
+    if(timing3*16 <1){
+    image(crap1, timing3*1920,803.9);
+    } else if(timing*16 <2){
+    image(crap2, timing3*1920,803.9);
+    } else if(timing3*16 <3){
+    image(crap3, timing3*1920,803.9);
+    } else if(timing3*16 <4){
+    image(crap4, timing3*1920,803.9);
+    } else if(timing3*16 <5){
+    image(crap5, timing3*1920,803.9);
+    } else if(timing3*16 <6){
+    image(crap6, timing3*1920,803.9);
+    } else if(timing3*16 <7){
+    image(crap7, timing3*1920,803.9);
+    } else if(timing3*16 <8){
+    image(crap8, timing3*1920,803.9);
+    } else if(timing3*16 <9){
+    image(crap9, timing3*1920,803.9);
+    } else if(timing3*16 <10){
+    image(crap10, timing3*1920,803.9);
+    } else if(timing3*16 <11){
+    image(crap11, timing3*1920,803.9);
+    } else if(timing3*16 <12){
+    image(crap12, timing3*1920,803.9);
+    } else if(timing3*16 <13){
+    image(crap13, timing3*1920,803.9);
+    } else if(timing3*16 <14){
+    image(crap14, timing3*1920,803.9);
+    } else if(timing3*16 <15){
+    image(crap15, timing3*1920,803.9);
+    } else{
+    image(crap16, timing3*1920,803.9);
+    }
+
+
+    image(tree,599.47,713.38);
+    image(bottom,1515.39,887.23);
 
 }
 
 
 function mousePressed(){
-	if(mouseX > 50 && mouseX <150 && mouseY > 50 && mouseY <150){
+	if(mouseX > 1638 && mouseX <1904 && mouseY > 690 && mouseY <880){
 		if(loadingImage === 1){
 			loadingImage = 2;
 			sound.play();
