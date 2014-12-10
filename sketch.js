@@ -22,6 +22,7 @@ function setup()
 
     bgm.loop();
 
+    prin = loadImage("prin.png");
     bottom = loadImage("bottom.png");
     boxClick1 = loadImage("boxClick1.png");
     boxClick2 = loadImage("boxClick2.png");
@@ -186,6 +187,13 @@ function draw()
     } else{
     image(leapL2,0,556.44);
     } 
+
+
+    if(mouseX > 187 && mouseX <481 && mouseY > 655 && mouseY <844 ){
+    image(prin,0,0);
+    }
+
+
 
 
     //
