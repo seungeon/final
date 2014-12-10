@@ -1,5 +1,5 @@
 
-var loadingImage = 1;
+var loadingImage = 2;
 var clcikImage = 1;
 var sound, bgm;
 var bgCount = 0;
@@ -80,9 +80,9 @@ function draw()
 
 
 
-    if(loadingImage === 1){
+    if(loadingImage === 2){
     	image(boxClick1,1683.31,748.11);
-    }else if(loadingImage === 2){
+    }else if(loadingImage === 1){
     	image(boxClick2,1683.31,748.11);
     }
 
@@ -263,11 +263,11 @@ function mouseClick(){
 
 function mousePressed(){
 	if(mouseX > 1638 && mouseX <1904 && mouseY > 690 && mouseY <880){
-		if(loadingImage === 1){
-			loadingImage = 2;
+		if(loadingImage === 2){
+			loadingImage = 1;
 			sound.play();
-		}else if(loadingImage ===2){
-			loadingImage =1;
+		}else if(loadingImage ===1){
+			loadingImage =2;
 			sound.stop();
 		}
 	}
