@@ -1,5 +1,6 @@
 var loadingImage = 1;
 var sound, bgm;
+var bgCount = 0;
 
 
 function preload(){
@@ -12,6 +13,7 @@ function setup()
 {
 	createCanvas(1920,1080);
     bg = loadImage("bg.png");
+    addBg = loadImage("addBg.png");
 
     bgm.loop();
 
@@ -59,9 +61,12 @@ function draw()
 {
     background(bg);
     
-
-    fill(237,112,50);
-    noStroke();
+    image(addBg,0+bgCount,0);
+    image(addBg,-addBg.width+bgCount,0);
+    bgCount = bgCount + 10;
+    if(bgCount > addBg.width){
+        bgCount =0;
+    }
 
 
     fill(237,112,50);
