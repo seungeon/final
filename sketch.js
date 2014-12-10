@@ -1,6 +1,10 @@
 var loadingImage = 1;
 var sound, bgm;
 var bgCount = 0;
+var bubbleY = 1850;
+var bubbleX = 100;
+var bubbleY1 = 1700;
+var bubbleX1 = 600;
 
 
 function preload(){
@@ -184,6 +188,24 @@ function draw()
     } 
 
 
+    //
+
+    var time = (new Date())%1000/1000;
+    fill(173,216,230,20);
+    ellipse(sin(time*2*PI)*100+bubbleX, bubbleY,bubbleY/3,bubbleY/3);
+    bubbleY = bubbleY - 10;
+    if(bubbleY < 0){
+        bubbleY = 800;
+    }
+
+    fill(173,216,230,255);
+    ellipse(sin(time*2*PI)*50+bubbleX1, bubbleY1,bubbleY1/10,bubbleY1/10);
+    bubbleY1 = bubbleY1 - 5;
+    if(bubbleY1 < 0){
+        bubbleY1 = 500;
+    }
+
+    //
 
     image(tree,599.47,713.38);
     image(bottom,1515.39,887.23);
