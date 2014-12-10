@@ -141,9 +141,6 @@ function draw()
     } 
 
 
-    if(mouseX > 187 && mouseX <481 && mouseY > 655 && mouseY <844 ){
-    image(prin,0,0);
-    }
 
 
 
