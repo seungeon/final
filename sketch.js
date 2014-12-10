@@ -11,6 +11,7 @@ var trailX = [0,0,0,0,0] ;
 var trailY = [0,0,0,0,0] ;
 
 
+
 function preload(){
   sound = loadSound("./click.mp3");
   bgm = loadSound("./bgm.mp3");
