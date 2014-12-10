@@ -198,10 +198,10 @@ function draw()
         bubbleY = 800;
     }
 
-    var time1 = (new Date())%500/500;
+    var time1 = (new Date())%1000/1000;
     fill(255,255,255,70);
     ellipse(sin(time1*2*PI)*100+bubbleX, bubbleY,bubbleY/5,bubbleY/5);
-    bubbleY = bubbleY - 10;
+    bubbleY = bubbleY - 5;
     if(bubbleY < 0){
         bubbleY = 800;
     }
