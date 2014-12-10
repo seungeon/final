@@ -1,4 +1,5 @@
 var loadingImage = 1;
+var clcikImage = 1;
 var sound, bgm;
 var bgCount = 0;
 var bubbleY = 1850;
@@ -22,7 +23,8 @@ function setup()
 
     bgm.loop();
 
-    prin = loadImage("prin.png");
+    click1 = loadImage("click1.png");
+    click2 = loadImage("click2.png");
     bottom = loadImage("bottom.png");
     boxClick1 = loadImage("boxClick1.png");
     boxClick2 = loadImage("boxClick2.png");
@@ -140,8 +142,10 @@ function draw()
     } 
 
 
-    if(mouseX > 187 && mouseX <481 && mouseY > 655 && mouseY <844 ){
-    image(prin,0,0);
+    if(clickImage === 1){
+        image(click1,0,0);
+    }else if(clickImage === 2){
+        image(click2,0,0);
     }
 
 
@@ -238,6 +242,22 @@ function draw()
 
 
 }
+
+
+
+function mouseClick(){
+    if(mouseX > 187 && mouseX <481 && mouseY > 655 && mouseY <844 ){
+        if(clickImage === 1){
+            clickImage = 2;
+            
+        }else if(clickImage ===2){
+            clickImage =1;
+            
+        }
+    }
+
+
+
 
 
 function mousePressed(){
