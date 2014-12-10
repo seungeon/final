@@ -1,4 +1,5 @@
 var loadingImage = 1;
+var loadingImage2 = 1;
 var sound, bgm;
 var bgCount = 0;
 var bubbleY = 1850;
@@ -83,6 +84,16 @@ function draw()
     }else if(loadingImage === 2){
     	image(boxClick2,1683.31,748.11);
     }
+
+
+    if(loadingImage2 === 1){
+        image(click1,0,0);
+    }else if(loadingImage2 === 2){
+        image(click2,0,0);
+    }
+
+
+
 
 
 
@@ -253,4 +264,17 @@ function mousePressed(){
 			sound.stop();
 		}
 	}
+
+    if(mouseX > 250 && mouseX <444 && mouseY > 576 && mouseY <805){
+        if(loadingImage2 === 1){
+            loadingImage2 = 2;
+            sound.play();
+        }else if(loadingImage2 ===2){
+            loadingImage2 =1;
+            sound.stop();
+        }
+    }
+
+
+
 }
