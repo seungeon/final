@@ -191,15 +191,23 @@ function draw()
     //
 
     var time = (new Date())%1000/1000;
-    fill(173,216,230,20);
+    fill(173,216,230,50);
     ellipse(sin(time*2*PI)*100+bubbleX, bubbleY,bubbleY/3,bubbleY/3);
+    bubbleY = bubbleY - 8;
+    if(bubbleY < 0){
+        bubbleY = 800;
+    }
+
+    var time1 = (new Date())%3000/3000;
+    fill(173,216,230,70);
+    ellipse(sin(time1*2*PI)*100+bubbleX, bubbleY,bubbleY/5,bubbleY/5);
     bubbleY = bubbleY - 10;
     if(bubbleY < 0){
         bubbleY = 800;
     }
 
-    fill(173,216,230,255);
-    ellipse(sin(time*2*PI)*50+bubbleX1, bubbleY1,bubbleY1/10,bubbleY1/10);
+    fill(173,216,230,150);
+    ellipse(sin(time*2*PI)*50+bubbleX1, bubbleY1,bubbleY1/7,bubbleY1/7);
     bubbleY1 = bubbleY1 - 5;
     if(bubbleY1 < 0){
         bubbleY1 = 500;
