@@ -7,6 +7,9 @@ var bubbleX = 100;
 var bubbleY1 = 1800;
 var bubbleX1 = 1600;
 
+var trailX = [0,0,0,0,0] ;
+var trailY = [0,0,0,0,0] ;
+
 
 function preload(){
   sound = loadSound("./click.mp3");
@@ -23,6 +26,8 @@ function setup()
     addBg2 = loadImage("addBg2.png");
 
     bgm.loop();
+
+    mouse = loadImage("mouse.png");
 
     click1 = loadImage("click1.png");
     click2 = loadImage("click2.png");
@@ -245,6 +250,25 @@ function draw()
     if(bgCount > addBg2.width){
         bgCount =0;
     }
+
+
+
+    image(mouse,mouseX, mouseY);
+
+    trailX[0] = (mouseX + trailX[0] * 9) / 10;
+    trailY[0] = (mouseY + trailY[0] * 9) / 10;
+    
+    image(mouse,trailX[0],trailY[0]);
+
+
+    for (var i = 1; i < 5; i = i+1)
+    {
+    trailX[i] = (trailX[i-1] + trailX[i] * 9) / 10;
+    trailY[i] = (trailY[i-1] + trailY[i] * 9) / 10;
+  
+    image(mouse,trailX[i],trailY[i]);
+    }
+
 
 
 }
