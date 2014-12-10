@@ -86,11 +86,6 @@ function draw()
     }
 
 
-    if(loadingImage2 === 1){
-        image(click1,0,0);
-    }else if(loadingImage2 === 2){
-        image(click2,0,0);
-    }
 
 
 
@@ -152,6 +147,11 @@ function draw()
     } 
 
 
+    if(loadingImage2 === 1){
+        image(click1,0,0);
+    }else if(loadingImage2 === 2){
+        image(click2,0,0);
+    }
 
 
 
