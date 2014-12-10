@@ -141,7 +141,9 @@ function draw()
     } 
 
 
-
+    if(mouseX > 187 && mouseX <481 && mouseY > 655 && mouseY <844 ){
+    image(prin,0,0);
+    }
 
 
 
@@ -239,17 +241,6 @@ function draw()
 }
 
 
-
-function mouseClick(){
-    if(mouseX > 187 && mouseX <481 && mouseY > 655 && mouseY <844 ){
-        if(loadingImage === 1){
-            loadingImage = 2;
-            sound.play();
-        }else if(loadingImage ===2){
-            loadingImage =1;
-            sound.stop();
-        }
-    }
 
 
 
