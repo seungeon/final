@@ -270,4 +270,3 @@ function mousePressed(){
 			sound.stop();
 		}
 	}
-}
