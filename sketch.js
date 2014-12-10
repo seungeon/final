@@ -5,8 +5,7 @@ var bubbleY = 1850;
 var bubbleX = 100;
 var bubbleY1 = 1800;
 var bubbleX1 = 600;
-var bubbleY2 = 1800;
-var bubbleX2 = 1600;
+
 
 function preload(){
   sound = loadSound("./click.mp3");
@@ -214,12 +213,7 @@ function draw()
         bubbleY1 = 800;
     }
 
-    fill(255,255,255,90);
-    ellipse(sin(time*2*PI)*50+bubbleX3, bubbleY3,bubbleY3/7,bubbleY3/7);
-    bubbleY3 = bubbleY1 - 3;
-    if(bubbleY3 < 0){
-        bubbleY3 = 1000;
-    }
+
 
     //
 
