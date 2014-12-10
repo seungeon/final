@@ -10,7 +10,8 @@ var bubbleX1 = 1600;
 
 function preload(){
   sound = loadSound("./click.mp3");
-	bgm = loadSound("./bgm.mp3");
+  bgm = loadSound("./bgm.mp3");
+  water = loadSound("./water.mp3");
 }
 
 function setup()
@@ -268,10 +269,10 @@ function mousePressed(){
     if(mouseX > 250 && mouseX <444 && mouseY > 576 && mouseY <805){
         if(loadingImage2 === 1){
             loadingImage2 = 2;
-            sound.play();
+            water.play();
         }else if(loadingImage2 ===2){
             loadingImage2 =1;
-            sound.stop();
+            water.stop();
         }
     }
 
