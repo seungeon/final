@@ -11,10 +11,10 @@ function preload(){
 function setup()
 
 {
-    
+
 	createCanvas(1920,1080);
     bg = loadImage("bg.png");
-    addBg = loadImage("addBg.png");
+    addBg2 = loadImage("addBg2.png");
 
     bgm.loop();
 
@@ -188,10 +188,10 @@ function draw()
     image(tree,599.47,713.38);
     image(bottom,1515.39,887.23);
 
-    image(addBg,0+bgCount,0);
-    image(addBg,-addBg.width+bgCount,0);
+    image(addBg2,0+bgCount,0);
+    image(addBg2,-addBg2.width+bgCount,0);
     bgCount = bgCount + 10;
-    if(bgCount > addBg.width){
+    if(bgCount > addBg2.width){
         bgCount =0;
     }
 
