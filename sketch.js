@@ -1,3 +1,4 @@
+
 var loadingImage = 1;
 var clcikImage = 1;
 var sound, bgm;
