@@ -11,6 +11,7 @@ function preload(){
 function setup()
 
 {
+    
 	createCanvas(1920,1080);
     bg = loadImage("bg.png");
     addBg = loadImage("addBg.png");
