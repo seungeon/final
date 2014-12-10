@@ -1,6 +1,4 @@
-
-var loadingImage = 2;
-var clickImage = 1;
+var loadingImage = 1;
 var sound, bgm;
 var bgCount = 0;
 var bubbleY = 1850;
@@ -80,9 +78,9 @@ function draw()
 
 
 
-    if(loadingImage === 2){
+    if(loadingImage === 1){
     	image(boxClick1,1683.31,748.11);
-    }else if(loadingImage === 1){
+    }else if(loadingImage === 2){
     	image(boxClick2,1683.31,748.11);
     }
 
@@ -143,11 +141,7 @@ function draw()
     } 
 
 
-    if(clickImage === 1){
-        image(click1,0,0);
-    }else if(clickImage === 2){
-        image(click2,0,0);
-    }
+
 
 
 
@@ -248,12 +242,12 @@ function draw()
 
 function mouseClick(){
     if(mouseX > 187 && mouseX <481 && mouseY > 655 && mouseY <844 ){
-        if(clickImage === 1){
-            clickImage = 2;
-            
-        }else if(clickImage ===2){
-            clickImage =1;
-            
+        if(loadingImage === 1){
+            loadingImage = 2;
+            sound.play();
+        }else if(loadingImage ===2){
+            loadingImage =1;
+            sound.stop();
         }
     }
 
@@ -263,11 +257,12 @@ function mouseClick(){
 
 function mousePressed(){
 	if(mouseX > 1638 && mouseX <1904 && mouseY > 690 && mouseY <880){
-		if(loadingImage === 2){
-			loadingImage = 1;
+		if(loadingImage === 1){
+			loadingImage = 2;
 			sound.play();
-		}else if(loadingImage ===1){
-			loadingImage =2;
+		}else if(loadingImage ===2){
+			loadingImage =1;
 			sound.stop();
 		}
 	}
+}
