@@ -214,7 +214,7 @@ function draw()
     }
 
     fill(255,255,255,80);
-    ellipse(sin(time*2*PI)*100+bubbleX1, bubbleY,bubbleY/10,bubbleY/10);
+    ellipse(sin(time*2*PI)*70+bubbleX1, bubbleY,bubbleY/10,bubbleY/10);
     bubbleY = bubbleY - 7;
     if(bubbleY < 0){
         bubbleY = 800;
