@@ -61,12 +61,6 @@ function draw()
 {
     background(bg);
     
-    image(addBg,0+bgCount,0);
-    image(addBg,-addBg.width+bgCount,0);
-    bgCount = bgCount + 10;
-    if(bgCount > addBg.width){
-        bgCount =0;
-    }
 
 
     fill(237,112,50);
@@ -192,6 +186,14 @@ function draw()
 
     image(tree,599.47,713.38);
     image(bottom,1515.39,887.23);
+
+    image(addBg,0+bgCount,0);
+    image(addBg,-addBg.width+bgCount,0);
+    bgCount = bgCount + 10;
+    if(bgCount > addBg.width){
+        bgCount =0;
+    }
+
 
 }
 
