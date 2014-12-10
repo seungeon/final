@@ -213,6 +213,13 @@ function draw()
         bubbleY1 = 800;
     }
 
+    fill(255,255,255,80);
+    ellipse(sin(time*2*PI)*100+bubbleX1, bubbleY1,bubbleY1/10,bubbleY1/10);
+    bubbleY1 = bubbleY1 - 7;
+    if(bubbleY1 < 0){
+        bubbleY1 = 900;
+    }
+
     //
 
     image(tree,599.47,713.38);
