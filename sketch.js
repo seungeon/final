@@ -198,13 +198,14 @@ function draw()
         bubbleY = 800;
     }
 
+/*
     fill(255,255,255,70);
     ellipse(sin(time*2*PI)*50+bubbleX, bubbleY,bubbleY/5,bubbleY/5);
     bubbleY = bubbleY - 5;
     if(bubbleY < 0){
         bubbleY = 800;
     }
-
+*/
     fill(255,255,255,150);
     ellipse(sin(time*2*PI)*50+bubbleX1, bubbleY1,bubbleY1/7,bubbleY1/7);
     bubbleY1 = bubbleY1 - 5;
