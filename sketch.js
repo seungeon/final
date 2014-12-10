@@ -1,6 +1,6 @@
 
 var loadingImage = 2;
-var clcikImage = 1;
+var clickImage = 1;
 var sound, bgm;
 var bgCount = 0;
 var bubbleY = 1850;
