@@ -4,7 +4,7 @@ var bgCount = 0;
 var bubbleY = 1850;
 var bubbleX = 100;
 var bubbleY1 = 1800;
-var bubbleX1 = 600;
+var bubbleX1 = 1600;
 
 
 function preload(){
@@ -206,7 +206,7 @@ function draw()
         bubbleY = 800;
     }
 */
-    fill(255,255,255,150);
+    fill(255,255,255,70);
     ellipse(sin(time*2*PI)*50+bubbleX1, bubbleY1,bubbleY1/7,bubbleY1/7);
     bubbleY1 = bubbleY1 - 5;
     if(bubbleY1 < 0){
