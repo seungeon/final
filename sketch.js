@@ -210,7 +210,7 @@ function draw()
     ellipse(sin(time*2*PI)*50+bubbleX1, bubbleY1,bubbleY1/7,bubbleY1/7);
     bubbleY1 = bubbleY1 - 5;
     if(bubbleY1 < 0){
-        bubbleY1 = 500;
+        bubbleY1 = 800;
     }
 
     //
