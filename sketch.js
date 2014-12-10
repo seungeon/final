@@ -3,8 +3,10 @@ var sound, bgm;
 var bgCount = 0;
 var bubbleY = 1850;
 var bubbleX = 100;
-var bubbleY1 = 1700;
+var bubbleY1 = 1800;
 var bubbleX1 = 600;
+var bubbleY2 = 1800;
+var bubbleX2 = 180;
 
 
 function preload(){
@@ -199,8 +201,8 @@ function draw()
     }
 
     fill(255,255,255,70);
-    ellipse(sin(time*2*PI)*50+bubbleX, bubbleY,bubbleY/5,bubbleY/5);
-    bubbleY = bubbleY - 5;
+    ellipse(sin(time*2*PI)*50+bubbleX2, bubbleY2,bubbleY2/5,bubbleY2/5);
+    bubbleY2 = bubbleY2 - 5;
     if(bubbleY < 0){
         bubbleY = 800;
     }
